@@ -10,28 +10,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const slidesData = [
         {
             id: 0,
-            src: 'asstes/img/WhatsApp Image 2026-08-13 at 11-upscaled (11).webp',
+            src: 'asstes/img/Artboard 18.webp',
             title: 'بديل الرخام والشاشات',
             category: 'بديل الرخام',
             tag: 'تصاميم عصرية فاخرة'
         },
         {
             id: 1,
-            src: 'asstes/img/WhatsApp Image 2026-08-13 at 11-upscaled (111).webp',
+            src: 'asstes/img/WhatsApp Image 2026-08-13 at 11-upscaled (122).webp',
             title: 'بديل الخشب والبارتشنات',
             category: 'بديل الخشب',
             tag: 'لمسات خشبية دافئة'
         },
         {
             id: 2,
-            src: 'asstes/img/WhatsApp Image 2026-08-13 at 11-upscaled (122).webp',
+            src: 'asstes/img/WhatsApp Image 2026-08-13 at 11-upscaled (21).webp',
             title: 'الفوم والمرايات الجدارية',
             category: 'الفوم والمرايات',
             tag: 'أبعاد بصرية واسعة'
         },
         {
             id: 3,
-            src: 'asstes/img/WhatsApp Image 2026-08-13 at 11-upscaled (18).webp',
+            src: 'asstes/img/WhatsApp Image 2026-08-13 at 11-upscaled (22).webp',
             title: 'تكسيات الفايبر والاستيل',
             category: 'الفايبر والاستيل',
             tag: 'ديكورات مبتكرة'

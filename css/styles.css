@@ -7368,3 +7368,14 @@ iframe {
         min-width: 36px !important;
     }
 }
+
+/* Sticky Navbar Added */
+.site-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
