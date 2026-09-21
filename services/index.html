@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
@@ -479,151 +479,149 @@
         </section>
 
         <!-- Interactive Video Showcase Section (Architectural Video Theater & Reels) -->
-                <section class="video-showcase-section" id="video-gallery">
-                    <div class="decor-circle-glow decor-glow-yellow video-glow"></div>
+        <section class="video-showcase-section" id="video-gallery">
+            <div class="decor-circle-glow decor-glow-yellow video-glow"></div>
 
-                    <div class="container">
-                        <!-- Section Header -->
-                        <div class="section-header text-center">
-                            <div class="section-tag-wrapper" data-reveal="curtain-up">
-                                <span class="badge-dot"></span>
-                                <span class="section-tag">تغطيات حية &bull; جولات التوثيق الميداني</span>
+            <div class="container">
+                <!-- Section Header -->
+                <div class="section-header text-center">
+                    <div class="section-tag-wrapper" data-reveal="curtain-up">
+                        <span class="badge-dot"></span>
+                        <span class="section-tag">تغطيات حية &bull; جولات التوثيق الميداني</span>
+                    </div>
+                    <h2 class="section-title" data-reveal="split-up" data-reveal-delay="1">شاهد الديكورات واقعاً
+                        حيّاً عبر التغطيات الفيديويّة لمشاريعنا<span class="title-dot">.</span></h2>
+                    <p class="section-desc center-desc" data-reveal="slide-right" data-reveal-delay="2">
+                        جولات مرئية دقيقة قبل وبعد التنفيذ، تُظهر جودة خامات بديل الرخام، بديل الخشب، التكسيات
+                        الجدارية، وديكورات الشاشات.
+                    </p>
+                </div>
+
+                <!-- Video Theater Grid (Master Video Player + Playlist Column) -->
+                <div class="video-theater-grid">
+
+                    <!-- Master Featured Video Player -->
+                    <div class="master-video-card" data-reveal="imax-expand" data-reveal-delay="2">
+                        <div class="video-frame-box" id="masterVideoFrame">
+                            <video id="mainVideoPlayer"
+                                poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.15 PM.jpeg.webp" autoplay muted
+                                loop playsinline>
+                                <source id="mainVideoSource"
+                                    src="/asstes/video/WhatsApp Video 2026-08-03 at 1.18.18 PM.mp4" type="video/mp4">
+                                متصفحك لا يدعم تشغيل الفيديو.
+                            </video>
+
+                            <!-- Video Overlay Mask & Play Controls -->
+                            <div class="video-overlay-gradient"></div>
+
+
+
+                            <div class="video-top-meta">
+                                <span class="video-badge-live"><i class="fa-solid fa-circle-dot"></i> تغطية
+                                    تنفيذ حيّة</span>
                             </div>
-                            <h2 class="section-title" data-reveal="split-up" data-reveal-delay="1">شاهد الديكورات واقعاً
-                                حيّاً عبر التغطيات الفيديويّة لمشاريعنا<span class="title-dot">.</span></h2>
-                            <p class="section-desc center-desc" data-reveal="slide-right" data-reveal-delay="2">
-                                جولات مرئية دقيقة قبل وبعد التنفيذ، تُظهر جودة خامات بديل الرخام، بديل الخشب، التكسيات
-                                الجدارية، وديكورات الشاشات.
-                            </p>
+
+                            <div class="video-bottom-info">
+                                <h3 class="video-main-title" id="videoMainTitle">جولة تنفيذ بديل الرخام والشاشات</h3>
+                                <p class="video-main-sub" id="videoMainSub">تغطية تشطيب بديل الرخام مع الإضاءة المخفية
+                                    والديكورات العصرية.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video Playlist Column (5 Interactive Reels) -->
+                    <div class="video-playlist-column" data-reveal="slide-left" data-reveal-delay="3">
+                        <div class="playlist-header">
+                            <i class="fa-solid fa-film"></i>
+                            <span>قائمة التغطيات الميدانية (5 فيديوهات)</span>
                         </div>
 
-                        <!-- Video Theater Grid (Master Video Player + Playlist Column) -->
-                        <div class="video-theater-grid">
+                        <div class="video-playlist-items">
 
-                            <!-- Master Featured Video Player -->
-                            <div class="master-video-card" data-reveal="imax-expand" data-reveal-delay="2">
-                                <div class="video-frame-box" id="masterVideoFrame">
-                                    <video id="mainVideoPlayer"
-                                        poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.15 PM.jpeg.webp"
-                                        autoplay muted loop playsinline>
-                                        <source id="mainVideoSource"
-                                            src="/asstes/video/WhatsApp Video 2026-08-03 at 1.18.18 PM.mp4"
-                                            type="video/mp4">
-                                        متصفحك لا يدعم تشغيل الفيديو.
-                                    </video>
+                            <!-- Reel 1 -->
+                            <div class="playlist-item active"
+                                data-video-url="/asstes/video/WhatsApp Video 2026-08-03 at 1.18.18 PM.mp4"
+                                data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.15 PM.jpeg.webp"
+                                data-title="جولة تنفيذ بديل الرخام والشاشات"
+                                data-sub="تغطية تشطيب بديل الرخام مع الإضاءة المخفية والديكورات العصرية."
+                                data-duration="01:30">
 
-                                    <!-- Video Overlay Mask & Play Controls -->
-                                    <div class="video-overlay-gradient"></div>
-
-                                    
-
-                                    <div class="video-top-meta">
-                                        <span class="video-badge-live"><i class="fa-solid fa-circle-dot"></i> تغطية
-                                            تنفيذ حيّة</span>
-                                    </div>
-
-                                    <div class="video-bottom-info">
-                                        <h3 class="video-main-title" id="videoMainTitle">جولة تنفيذ بديل الرخام والشاشات</h3>
-                                        <p class="video-main-sub" id="videoMainSub">تغطية تشطيب بديل الرخام مع الإضاءة المخفية والديكورات العصرية.</p>
-                                    </div>
+                                <div class="playlist-info">
+                                    <h4 class="playlist-title">تنفيذ بديل الرخام والشاشات</h4>
+                                    <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 01:30 &bull;
+                                        تغطية ميدانية</span>
                                 </div>
+                                <span class="playing-indicator-dot"></span>
                             </div>
 
-                            <!-- Video Playlist Column (5 Interactive Reels) -->
-                            <div class="video-playlist-column" data-reveal="slide-left" data-reveal-delay="3">
-                                <div class="playlist-header">
-                                    <i class="fa-solid fa-film"></i>
-                                    <span>قائمة التغطيات الميدانية (5 فيديوهات)</span>
+                            <!-- Reel 2 -->
+                            <div class="playlist-item"
+                                data-video-url="/asstes/video/WhatsApp Video 2026-08-03 at 1.21.05 PM.mp4"
+                                data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.17 PM.jpeg.webp"
+                                data-title="تركيب بديل الخشب والبارتشنات المضاءة"
+                                data-sub="خطوات تركيب شرائح بديل الخشب مع فواصل الاستيل الذهبي." data-duration="01:45">
+
+                                <div class="playlist-info">
+                                    <h4 class="playlist-title">تركيب بديل الخشب والبارتشنات</h4>
+                                    <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 01:45 &bull;
+                                        تغطية ميدانية</span>
                                 </div>
+                                <span class="playing-indicator-dot"></span>
+                            </div>
 
-                                <div class="video-playlist-items">
+                            <!-- Reel 3 -->
+                            <div class="playlist-item"
+                                data-video-url="/asstes/video/WhatsApp Video 2026-08-13 at 11.34.32 AM.mp4"
+                                data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.19 PM.jpeg.webp"
+                                data-title="تفاصيل تكسيات الفايبر والاستيل الذهبي"
+                                data-sub="استعراض ملمس ألواح الفايبر والإضاءة الجدارية." data-duration="02:10">
 
-                                    <!-- Reel 1 -->
-                                    <div class="playlist-item active"
-                                        data-video-url="/asstes/video/WhatsApp Video 2026-08-03 at 1.18.18 PM.mp4"
-                                        data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.15 PM.jpeg.webp"
-                                        data-title="جولة تنفيذ بديل الرخام والشاشات"
-                                        data-sub="تغطية تشطيب بديل الرخام مع الإضاءة المخفية والديكورات العصرية."
-                                        data-duration="01:30">
-                                        
-                                        <div class="playlist-info">
-                                            <h4 class="playlist-title">تنفيذ بديل الرخام والشاشات</h4>
-                                            <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 01:30 &bull;
-                                                تغطية ميدانية</span>
-                                        </div>
-                                        <span class="playing-indicator-dot"></span>
-                                    </div>
-
-                                    <!-- Reel 2 -->
-                                    <div class="playlist-item"
-                                        data-video-url="/asstes/video/WhatsApp Video 2026-08-03 at 1.21.05 PM.mp4"
-                                        data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.17 PM.jpeg.webp"
-                                        data-title="تركيب بديل الخشب والبارتشنات المضاءة"
-                                        data-sub="خطوات تركيب شرائح بديل الخشب مع فواصل الاستيل الذهبي."
-                                        data-duration="01:45">
-                                       
-                                        <div class="playlist-info">
-                                            <h4 class="playlist-title">تركيب بديل الخشب والبارتشنات</h4>
-                                            <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 01:45 &bull;
-                                                تغطية ميدانية</span>
-                                        </div>
-                                        <span class="playing-indicator-dot"></span>
-                                    </div>
-
-                                    <!-- Reel 3 -->
-                                    <div class="playlist-item"
-                                        data-video-url="/asstes/video/WhatsApp Video 2026-08-13 at 11.34.32 AM.mp4"
-                                        data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.19 PM.jpeg.webp"
-                                        data-title="تفاصيل تكسيات الفايبر والاستيل الذهبي"
-                                        data-sub="استعراض ملمس ألواح الفايبر والإضاءة الجدارية."
-                                        data-duration="02:10">
-                                        
-                                        <div class="playlist-info">
-                                            <h4 class="playlist-title">ألواح الفايبر وشرائح الاستيل</h4>
-                                            <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 02:10 &bull;
-                                                تغطية ميدانية</span>
-                                        </div>
-                                        <span class="playing-indicator-dot"></span>
-                                    </div>
-
-                                    <!-- Reel 4 -->
-                                    <div class="playlist-item"
-                                        data-video-url="/asstes/video/WhatsApp Video 2026-08-13 at 11.36.44 AM (4).mp4"
-                                        data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.20 PM (1).jpeg.webp"
-                                        data-title="تكسيات جدارية وديكورات مكاتب ومنازل"
-                                        data-sub="تغطية ميدانية لتنفيذ الديكورات الداخلية والخارجية بجودة عالية."
-                                        data-duration="01:15">
-                                        
-                                        <div class="playlist-info">
-                                            <h4 class="playlist-title">تكسيات جدارية للمنازل والمكاتب</h4>
-                                            <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 01:15 &bull;
-                                                تغطية ميدانية</span>
-                                        </div>
-                                        <span class="playing-indicator-dot"></span>
-                                    </div>
-
-                                    <!-- Reel 5 -->
-                                    <div class="playlist-item"
-                                        data-video-url="/asstes/video/WhatsApp Video 2026-08-13 at 11.36.44 AM (7).mp4"
-                                        data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.20 PM (2).jpeg.webp"
-                                        data-title="تغطية تشطيب وتوريد الفوم والمرايات"
-                                        data-sub="جولة ميدانية لعرض تفاصيل الفوم والمرايات الجدارية والاستيل."
-                                        data-duration="02:00">
-                                       
-                                        <div class="playlist-info">
-                                            <h4 class="playlist-title">ديكورات الفوم والمرايات الجدارية</h4>
-                                            <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 02:00 &bull;
-                                                تغطية ميدانية</span>
-                                        </div>
-                                        <span class="playing-indicator-dot"></span>
-                                    </div>
-
+                                <div class="playlist-info">
+                                    <h4 class="playlist-title">ألواح الفايبر وشرائح الاستيل</h4>
+                                    <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 02:10 &bull;
+                                        تغطية ميدانية</span>
                                 </div>
+                                <span class="playing-indicator-dot"></span>
+                            </div>
+
+                            <!-- Reel 4 -->
+                            <div class="playlist-item"
+                                data-video-url="/asstes/video/WhatsApp Video 2026-08-13 at 11.36.44 AM (4).mp4"
+                                data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.20 PM (1).jpeg.webp"
+                                data-title="تكسيات جدارية وديكورات مكاتب ومنازل"
+                                data-sub="تغطية ميدانية لتنفيذ الديكورات الداخلية والخارجية بجودة عالية."
+                                data-duration="01:15">
+
+                                <div class="playlist-info">
+                                    <h4 class="playlist-title">تكسيات جدارية للمنازل والمكاتب</h4>
+                                    <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 01:15 &bull;
+                                        تغطية ميدانية</span>
+                                </div>
+                                <span class="playing-indicator-dot"></span>
+                            </div>
+
+                            <!-- Reel 5 -->
+                            <div class="playlist-item"
+                                data-video-url="/asstes/video/WhatsApp Video 2026-08-13 at 11.36.44 AM (7).mp4"
+                                data-poster="/asstes/img/WhatsApp Image 2026-08-03 at 1.18.20 PM (2).jpeg.webp"
+                                data-title="تغطية تشطيب وتوريد الفوم والمرايات"
+                                data-sub="جولة ميدانية لعرض تفاصيل الفوم والمرايات الجدارية والاستيل."
+                                data-duration="02:00">
+
+                                <div class="playlist-info">
+                                    <h4 class="playlist-title">ديكورات الفوم والمرايات الجدارية</h4>
+                                    <span class="playlist-meta"><i class="fa-regular fa-clock"></i> 02:00 &bull;
+                                        تغطية ميدانية</span>
+                                </div>
+                                <span class="playing-indicator-dot"></span>
                             </div>
 
                         </div>
                     </div>
-                </section>
+
+                </div>
+            </div>
+        </section>
 
         <!-- VIDEO THEATER FULLSCREEN LIGHTBOX POPUP MODAL -->
         <div class="video-modal-overlay" id="videoModal">
