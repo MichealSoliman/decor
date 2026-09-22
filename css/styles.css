@@ -7450,22 +7450,24 @@ iframe {
 }
 
 .popover-branch-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.6rem 0.8rem;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.82rem;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    background: rgba(255, 255, 255, 0.03);
-    white-space: nowrap;
+    width: auto !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.6rem 0.8rem !important;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-size: 0.82rem !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.03) !important;
+    white-space: nowrap !important;
+    border: none !important;
 }
 
 .popover-branch-link:hover {
-    background: rgba(238, 99, 56, 0.15);
-    color: var(--primary-orange, #EE6338);
+    background: rgba(238, 99, 56, 0.15) !important;
+    color: var(--primary-orange, #EE6338) !important;
 }
 
 .popover-branch-link i.fa-arrow-left {
