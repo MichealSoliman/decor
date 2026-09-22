@@ -3125,7 +3125,7 @@ button {
     gap: 0.65rem;
 }
 
-.social-links a {
+.social-links > a {
     width: 42px;
     height: 42px;
     border-radius: 12px;
@@ -3139,7 +3139,7 @@ button {
     transition: var(--transition-smooth);
 }
 
-.social-links a:hover {
+.social-links > a:hover {
     background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-yellow) 100%);
     border-color: var(--primary-orange);
     color: #FFFFFF;
@@ -7378,4 +7378,103 @@ iframe {
     z-index: 9999;
     background-color: #fff;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.social-location-wrapper {
+    position: relative;
+    display: inline-flex;
+}
+
+.social-links .social-location-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #F4EFEB;
+    font-size: 1.15rem;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+    padding: 0;
+}
+
+.social-links .social-location-btn:hover,
+.social-location-wrapper:hover .social-location-btn,
+.social-location-wrapper:focus-within .social-location-btn {
+    background: linear-gradient(135deg, var(--primary-orange) 0%, var(--accent-yellow) 100%);
+    border-color: var(--primary-orange);
+    color: #FFFFFF;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 22px rgba(238, 99, 56, 0.45);
+}
+
+.social-location-popover {
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%) translateY(10px);
+    background: rgba(25, 25, 25, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    min-width: 170px;
+    z-index: 100;
+}
+
+.social-location-wrapper:hover .social-location-popover,
+.social-location-wrapper:focus-within .social-location-popover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(50%) translateY(-10px);
+}
+
+.social-location-popover::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(25, 25, 25, 0.95) transparent transparent transparent;
+}
+
+.popover-branch-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 0.8rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.82rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background: rgba(255, 255, 255, 0.03);
+    white-space: nowrap;
+}
+
+.popover-branch-link:hover {
+    background: rgba(238, 99, 56, 0.15);
+    color: var(--primary-orange, #EE6338);
+}
+
+.popover-branch-link i.fa-arrow-left {
+    opacity: 0.5;
+    transition: all 0.2s;
+    font-size: 0.75rem;
+}
+
+.popover-branch-link:hover i.fa-arrow-left {
+    opacity: 1;
+    transform: translateX(-4px);
 }
